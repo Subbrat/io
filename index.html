@@ -1,207 +1,388 @@
 <!DOCTYPE html>
 <html>
 <!-- secugreen with MIT licence to https://github.com/subbrat/ -->
-<title>Personal Profie</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  #card {
-    border-radius: .1%;
-  }
 
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif
-  }
-</style>
+<head>
+    <title>Profile Page</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=allerta'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #bgrt {
+            background: linear-gradient(to bottom, #ff0 0%, #0ff 25%, #f0f 50%, #fff 100%);
+            border-radius: .1%;
+        }
 
-<body class="w3-2019-eden">
-  <!-- the bg  -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    <div class="w3-row-padding">
+        #glow {
+            box-shadow:
+                inset 0 0 50px #fff,
+                /* inner white */
+                inset 20px 0 80px #f0f,
+                /* inner left magenta short */
+                inset -20px 0 80px #0ff,
+                /* inner right cyan short */
+                inset 20px 0 300px #f0f,
+                /* inner left magenta broad */
+                inset -20px 0 300px #0ff,
+                /* inner right cyan broad */
+                0 0 50px #fff,
+                /* outer white */
+                -10px 0 80px #f0f,
+                /* outer left magenta */
+                10px 0 80px #0ff;
+            /* outer right cyan */
+        }
 
-      <!-- Left Column start -->
-      <div class="w3-third w3-card-4" id="card">
-        <div class="  w3-text-white">
-          <div class="w3-display-container">
-            <img src="avatar.png" style="width:100%" alt="Avatar">
-            <div class="w3-display-bottomleft w3-container w3-text-black">
-              <h2>Subbrat</h2>
+        #bar-glow {
+            box-shadow:
+                inset 0 0 50px #fff,
+                /* inner white */
+                inset 20px 0 80px #f0f,
+                /* inner left magenta short */
+                inset -20px 0 80px #0ff,
+                /* inner right cyan short */
+                inset 20px 0 300px #f0f,
+                /* inner left magenta broad */
+                inset -20px 0 300px #0ff,
+                /* inner right cyan broad */
+                0 0 50px #fff,
+                /* outer white */
+                -10px 0 80px #f0f,
+                /* outer left magenta */
+                10px 0 80px #0ff;
+            /* outer right cyan */
+        }
+
+        #bar1-glow {
+            box-shadow:
+                inset 0 0 50px #fff,
+                /* inner white */
+                inset 20px 0 80px #f0f,
+                /* inner left magenta short */
+                inset -20px 0 80px #0ff,
+                /* inner right cyan short */
+                inset 20px 0 300px #f0f,
+                /* inner left magenta broad */
+                inset -20px 0 300px #0ff,
+                /* inner right cyan broad */
+                0 0 50px #fff,
+                /* outer white */
+                -10px 0 80px #f0f,
+                /* outer left magenta */
+                10px 0 80px #0ff;
+            /* outer right cyan */
+        }
+
+        #curve {
+            border-radius: 1%;
+        }
+
+        .w3-allerta {
+            font-family: "Allerta Stencil", Sans-serif;
+        }
+
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="w3-black" id="bgrt">
+    <!-- the bg Container -->
+    <div class=" w3-content w3-margin-top w3-black" style="max-width:1400px;" id="bgrt">
+        <!-- when in vertical mode  -->
+        <div class="w3-row-padding ">
+
+            <!-- Left Column start || only left -->
+            <!-- most errored -->
+            <div class=" w3-third ">
+                <!-- style="padding-top:.9%;padding-bottom:.9% -->
+                <!-- made the starting a bit down ofc -->
+                <div class="w3-black w3-text-white w3-card-4 w3-round-large" id="glow">
+                    <!-- image box -->
+                    <div class="w3-display-container w3-black">
+                        <img src="icon.png" id="avatar" style="width:100%;border-radius: 50%;" alt="profile img">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+
+                            <!--:: w3-round-xxlarge for circular effect :: id="glow"-->
+                            <div class="w3-xxxlarge w3-text-white w3-transparent w3-allerta ">Subbrat</div>
+
+                        </div>
+                    </div>
+                    <!-- bottom of avatar -->
+                    <div class="w3-container w3-text-white" id="bar1-glow>
+                        <p"><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-white"></i>Subrat
+                        m.</p>
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white"></i>Student</p>
+                        <p "><i class=" fa fa-home fa-fw w3-margin-right w3-large w3-text-white"></i>Odisha,
+                            India</p>
+                        <p "><a style=" text-decoration:none" href="mailto:m.subrat606@gmail.com"><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white"></i>m.subrat606@gmail.com</a>
+                        </p>
+                        <P><a style="text-decoration:none" href="tel:9692270093"><i
+                                    class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-white"></i>9692270093</a>
+                        </P>
+                        <hr>
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-white"></i>Skills</b>
+                        </p>
+                        Microsoft Office
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:80%">80%</div>
+                        </div><br>
+                        Photography
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:60%">
+                                <div class="w3-center w3-text-white">60%</div>
+                            </div>
+                        </div><br>
+                        Media Manipulation& Social Media
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:80%">80%</div>
+                        </div><br>
+                        Creative Writing
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:50%">50%
+                            </div>
+                        </div><br>
+                        Speaking, Debate and Onstage
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:0%">0%</div>
+                        </div><br>
+
+                        Hardware & General Programming
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:65%">65%</div>
+                        </div><br>
+
+
+                        Networking & Cyber
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:70%">70%</div>
+                        </div><br>
+
+                        Hardware & General Programming
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:65%">65%
+                            </div>
+                        </div><br>
+
+                        Arduino and other IOT
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:60%">60%
+                            </div>
+                        </div><br>
+
+                        Database & Analytics
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style="width:75%">75%</div>
+                        </div><br>
+
+
+                        VideoGames
+                        <div class="w3-black w3-round w3-card-2 w3-small" id="bar-glow">
+                            <div class="w3-container w3-center w3-round w3-white" style=" width:94%">94%</div>
+                        </div>
+                        <br>
+                        <!-- languages -->
+
+                        <p class="w3-large w3-text-theme" id="glow"><b><i
+                                    class="fa fa-globe fa-fw w3-margin-right w3-text-white"></i>Languages</b></p>
+
+                        <p>Odia</p>
+                        <div class="w3-black w3-round-large w3-card-4" id="glow">
+                            <div class="w3-round-large w3-white" style="height:24px;width:98%"></div>
+                        </div>
+
+                        <p>English</p>
+                        <div class="w3-black w3-round-large w3-card-4" id="glow">
+                            <div class=" w3-round-large w3-white" style="height:24px;width:93%">
+                            </div>
+                        </div>
+
+                        <p>Hindi</p>
+                        <div class="w3-black w3-round-large w3-card-4 " id="glow">
+                            <div class="w3-round-large w3-white" style="height:24px;width:98%"></div>
+                        </div>
+
+
+
+
+
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
             </div>
-          </div>
-          <div class="w3-container">
-            <p><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-green"></i>Subrat m.</p>
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-green"></i>Student</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-green"></i>Odisha, India</p>
-            <p><a style="text-decoration:none" href="mailto:m.subrat606@gmail.com"><i
-                  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-green"></i>m.subrat606@gmail.com</a> </p>
-            <P><a style="text-decoration:none" href="tel:9692270093"><i
-                  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-green"></i>9692270093</a> </P>
-            <hr>
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-green"></i>Skills</b></p>
-            Microsoft Office
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:80%">80%</div>
-            </div><br>
-            Photography
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:60%">
-                <div class="w3-center w3-text-white">60%</div>
-              </div>
-            </div><br>
-            Media Manipulation& Social Media
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:80%">80%</div>
-            </div><br>
-            Creative Writing
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:50%">50%</div>
-            </div><br>
-            Speaking, Debate and Onstage
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:0%">0%</div>
-            </div><br>
-
-            Hardware & General Programming
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="width:65%">65%</div>
-            </div><br>
+            <!-- Right Column start-->
+            <!-- whole right col  -->
+            <div class="w3-twothird ">
+                <!-- right top -->
+                <div class="w3-container w3-text-white w3-margin-bottom w3-card-4 w3-2019-eden w3-round-large"
+                    id="glow">
+                    <h2 class="w3-text-white w3-round-large w3-padding-16" id="bar1-glow"><i
+                            class="fa fa-book fa-fw w3-margin-right w3-text-white w3-xxlarge w3-text-white"></i>EDUCATION
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"> <a style="text-decoration:none"
+                                href="https://en.wikipedia.org/wiki/Indian_Institute_of_Science_Education_and_Research_Berhampur"
+                                target=_blank><b>IISER Berhampur</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span
+                                    class="w3-tag w3-white w3-round">Current</span></h6>
+                            <p>BS - MS Dual Degree<br>
+                                Cleared IAT 2021</p>
+                            <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"> <a style="text-decoration:none"
+                                href="https://www.google.com/search?q=jnv+phulbani" target=_blank><b>JNV
+                                    Phulbani</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2018
+                            </h6>
+                            <p>High School, 74.2% AISSE </p><br>
+                    </div>
+                </div>
+                <!-- right bottom -->
+                <div class="w3-container w3-text-white w3-card-4 w3-text-white w3-2019-eden w3-round" id="glow">
+                    <h2 class=" w3-round-large w3-text-white w3-padding-16" id="bar1-glow"><i
+                            class="  fa fa-certificate fa-fw w3-margin-right w3-xlarge w3-text-white"></i>OPEN-SOURCE
+                    </h2>
 
 
-            Networking & Cyber
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
-            </div><br>
-
-            Hardware & General Programming
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:65%">65%</div>
-            </div><br>
-
-            Arduino and other IOT
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:60%">60%</div>
-            </div><br>
-
-            Database & Analytics
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:75%">75%</div>
-            </div><br>
 
 
-            VideoGames
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:94%">94%</div>
-            </div><br>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="https://w3schools.com"
+                                target=_blank><b>W3Schools</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - <span
+                                    class="w3-tag w3-white w3-round">Forever</span></h6>
+                            <p>HTML5 & CSS 3<br>
+                                And many other things.</p>
+                            <hr>
+                    </div>
 
-            <!-- language -->
-            <p class="w3-large w3-text-theme"><b><i
-                  class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
-            Odia
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-green" style="height:24px;width:98%"></div>
-            </div><br>
-            English
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-green" style="height:24px;width:93%"></div>
-            </div><br>
-            Hindi
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-green" style="height:24px;width:87%"></div>
-            </div><br>
-            Bengali
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-yellow" style="height:24px;width:45%"></div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="https://lernx.in" target=_blank><b>LernX</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - <span
+                                    class="w3-tag w3-white w3-round">Forever</span></h6>
+                            <p>Freelancing skills<br>
+                                ++</p>
+                            <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="https://github.com" target=_blank><b>GitHub</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - <span
+                                    class="w3-tag w3-white w3-round">Forever</span></h6>
+                            <p>Version control and website hosting<br>
+                                Place of my service hosting.</p>
+                            <hr>
+                    </div>
+
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="https://quora.com/subrat-mallick-19"
+                                target=_blank><b>Quora</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - <span
+                                    class="w3-tag w3-white w3-round">Forever</span></h6>
+                            <p>QnA and other general things<br>
+                            </p>
+                            <hr>
+                    </div>
+
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="https://youtube.com" target=_blank><b>YouTube</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017- <span
+                                    class="w3-tag w3-white w3-round">Forever</span></h6>
+                            <p>Ineligible question that what I've learnt from youtube<br>
+                            </p>
+                            <hr>
+                    </div>
+
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="https://stackoverflow.com"
+                                target=_blank><b>Stackoverflow</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - <span
+                                    class="w3-tag w3-white w3-round">Forever</span></h6>
+                            <p>Troubleshooting and FAQ<br>
+                            </p>
+                            <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity">
+                            <a style="text-decoration:none" href="#" target=_blank><b>Internet</b></a>
+                            <h6 class="w3-text-white"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Don't know -
+                                <span class="w3-tag w3-white w3-round">Forever</span>
+                            </h6>
+                            <p>You really want to know what I've learnt from Internet?<br>
+                            </p>
+                            <hr>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
             </div>
-            <br>
-          </div>
         </div>
-        <!-- End Left Column -->
-      </div>
-      <!-- Right Column start -->
-      <div class="w3-twothird w3-2020-brilliant-white">
-
-        <div class=" w3-container w3-card w3-pink" id="card">
-          <!-- for education grid -->
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>EDUCATION</h2>
-
-          <div class="w3-container">
-            <h5 class="w3-opacity"> <a style="text-decoration:none"
-                href="https://en.wikipedia.org/wiki/Indian_Institute_of_Science_Education_and_Research_Berhampur"
-                target=_blank>IISER Berhampur</a>
-              <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span
-                  class="w3-tag w3-green w3-round">Current</span></h6>
-              <p>BS - MS Dual Degree<br>
-                Cleared IAT 2021</p>
-              <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"> <a style="text-decoration:none" href="https://www.google.com/search?q=jnv+phulbani"
-                target=_blank>JNV Phulbani</a>
-              <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2018</h6>
-              <p>High School, 74.2% AISSE </p><br>
-          </div>
-        </div><!-- section end of right 1 div // education -->
-        <br>
-        <div class="w3-2020-brilliant-white w3-container w3-card w3-cyan w3-margin-bottom" id="card">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>WORK BASES</h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-            <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - </h6>
-            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-            <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-            <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-          </div>
-        </div>
-      </div><!-- End Right 2 div //workbase -->
-    </div><!-- End Grid -->
-  </div><!-- End Page Container -->
-  <footer class="w3-2021-inkwell w3-container w3-center w3-margin-top w3-card-4" id="card">
-    <p>
-    <h4>Endnote</h4>
-    </p>
-    <center>
-      <p>I am an amateur and intellectual person in the field of programming and development. I learnt these from
-        open-source platforms and committed to keeping my codes open-source too. My website and other releases do use
-        open-source elements inherited from other creators, and I do allow other users to use my files until that is
-        used in form of a free to consume package.</p>
-    </center>
-    <a href="http://www.instagram.com/subbrat_" target="_blank"><i
-        class="w-3 white fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/subbrat/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="http://www.twitter.com/yuTheSunflower" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="http://www.github.com/Subbrat" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.quora.com/profile/Subbrat" target="_blank"><i class="fa fa-quora w3-hover-opacity"></i></a>
-    <a href="mailto:m.subrat606@gmail.com target=_blank"> <i class="fa fa-envelope w3-hover-opacity"></i></a>
-    <br><br>
-  </footer>
+    </div>
+    <footer class="w3-2021-inkwell w3-container w3-center w3-margin-top w3-card-4 w3-round-large" id="glow">
+        <p>
+        <h4><u>Endnote</u></h4>
+        </p>
+        <center>
+            <p>I am an amateur and intellectual person in the field of programming and development. I learnt these
+                from
+                open-source platforms and committed to keeping my codes open-source too. My website and other
+                releases
+                do use
+                open-source elements inherited from other creators, and I do allow other users to use my files until
+                that is
+                used in form of a free to consume package.</p>
+        </center>
+        <a href="http://www.instagram.com/subbrat_/" target="_blank"> <i
+                class="w-3 white fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/subbrat/" target="_blank"> <i
+                class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a href="http://www.twitter.com/yuTheSunflower/" target="_blank"> <i
+                class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="http://www.github.com/Subbrat/" target="_blank"> <i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.quora.com/profile/Subbrat/" target="_blank"> <i
+                class="fa fa-quora w3-hover-opacity"></i></a>
+        <a href="mailto:m.subrat606@gmail.com" target="_blank"> <i
+                class="fa fa-envelope w3-hover-opacity"></i></a><br><br>
+    </footer>
 </body>
 
 </html>
