@@ -105,6 +105,11 @@
 </head>
 
 <body class="w3-black" id="bgrt">
+
+
+
+
+
     <!-- the bg Container -->
     <div class=" w3-content w3-margin-top w3-black" style="max-width:1400px;" id="bgrt">
         <!-- when in vertical mode  -->
@@ -203,7 +208,7 @@
                         <br>
                         <!-- languages -->
 
-                        <p class="w3-large w3-text-theme" id="glow"><b><i
+                        <p class="w3-large w3-text-theme"><b><i
                                     class="fa fa-globe fa-fw w3-margin-right w3-text-white"></i>Languages</b></p>
 
                         <p>Odia</p>
@@ -383,6 +388,21 @@
         <a href="mailto:m.subrat606@gmail.com" target="_blank"> <i
                 class="fa fa-envelope w3-hover-opacity"></i></a><br><br>
     </footer>
+    <p id="count"> </p>
+
+
+    <script>
+        const countEl = document.getElementById('count');
+        document.getElementById("count").style.display = "none";
+        updateVisitCount();
+        function updateVisitCount() {
+            fetch('https://api.countapi.xyz/update/subbrat/profileio?amount=+1')
+                .then(res => res.json())
+                .then(res => {
+                    countEl.innerHTML = res.value;
+                })
+        }
+    </script>
 </body>
 
 </html>
